@@ -83,7 +83,6 @@ declare const window: any
 export default defineComponent({
   computed: {
     shouldConnectWallet() {
-      console.log(!walletInfo.userWallet)
       return !walletInfo.userWallet
     }
   }

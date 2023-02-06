@@ -1,16 +1,16 @@
 import { defineStore, PiniaCustomStateProperties, StoreDefinition } from 'pinia'
 
 export const useSideNav = defineStore({
-  id: 'wallet-connections-store',
+  id: 'side-nav-store',
   state: () => {
     return {
       selected: 0,
     }
   },
   actions: {
-    setSelectedOption(index: number) {
+    setOption(index: number) {
       this.selected = index
-    },
+    }
   },
   getters: {
     selectedOption: (state) => state.selected

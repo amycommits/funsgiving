@@ -10,3 +10,9 @@ declare module '@nuxt/types' {
     };
   }
 }
+
+export interface SideNavOption {
+  name: string;
+  slug: string;
+  component: string;
+}
