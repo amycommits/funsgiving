@@ -5,6 +5,9 @@ const config: NuxtConfig = {
   imports: {
     dirs: ['./stores']
   },
+  buildModules: [
+    '@nuxt/typescript-build',
+  ],
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/image-edge',
@@ -13,6 +16,9 @@ const config: NuxtConfig = {
   pinia: {
     autoImports: ['defineStore', 'acceptHMRUpdate'],
   },
+  serverMiddleware: [
+    { path: '/server-api', handler: '~/server-middleware/index.ts' }
+  ]  
 }
 
 export default config
