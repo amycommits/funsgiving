@@ -9,9 +9,21 @@ Make sure to install the dependencies:
 ```bash
 # yarn
 yarn install
-
-
 ```
+
+## Setup Submodules
+
+clone https://github.com/amycommits/funsgiving-contracts
+
+```bash
+git log
+```
+
+copy the commit to your clipboard and cd into the root of this repo
+
+git submodule add -b <commit> https://github.com/amycommits/funsgiving-contracts
+
+
 
 ## Development Server
 

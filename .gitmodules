@@ -1,0 +1,3 @@
+[submodule "funsgiving-contracts"]
+  path = funsgiving-contracts
+  url = https://github.com/amycommits/funsgiving-contracts
